@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C86E2B"
+    tools:context=".input_pustakawan">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="412dp"
+        android:layout_height="558dp"
+        android:background="@drawable/bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edId"
+            android:layout_width="370dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="55dp"
+            android:ems="10"
+            android:hint="Id"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ednama"
+            android:layout_width="370dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Nama"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edId" />
+
+        <EditText
+            android:id="@+id/edstatus"
+            android:layout_width="370dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Status"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ednama" />
+
+        <EditText
+            android:id="@+id/edtgl"
+            android:layout_width="370dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Tanggal Registrasi"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edstatus" />
+
+        <Button
+            android:id="@+id/btnsave"
+            android:layout_width="261dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#C86E2B"
+            android:text="S I M P A N"
+            android:textSize="8pt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtgl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
